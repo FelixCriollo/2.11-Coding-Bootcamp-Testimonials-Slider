@@ -24,6 +24,17 @@
       background-size: 28%;
     }
   }
+
+  @include desktop {
+    left: 26%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    
+    &__btn {
+      width: 56px;
+      height: 56px;
+    }
+  }
 }
 
 

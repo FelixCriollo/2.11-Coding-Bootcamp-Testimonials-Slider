@@ -3,31 +3,38 @@
 
 .photography {
   position: relative;
-  padding: 1.69em 1.907em 1.5em 1.907em;
-  background: url("../../images/pattern-bg.svg") center no-repeat;
-  background-position-y: 22px;
-  background-size: 87%;
+  padding: .67em .79em;
   
   &__photo {
-    width: min(100%, 350px);
-    object-fit: cover;
+    width: 100%;
     border-radius: 4px;
     box-shadow: 0px 30px 40px -24px rgba(38, 32, 70, .5);
   }
 
   @include desktop {
+    width: 58%;
+    height: min(700px, 87.5vh);
+    padding-inline: 0;
+
+    // Fixear foto
+    &__photo {
+      width: min(540px, 60%);
+    }
+  }
+}
+
+.photo-container {
+  width: 100%;
+  padding: .85em 1.05em .85em 1.05em;
+  background: url("../../images/pattern-bg.svg") no-repeat;
+  background-size: contain;
+  
+  @include desktop {
+    background-position: center;
     padding: 0;
-    width: 54%;
     height: 100%;
-    background-position: center center;
-    background-size: 100%;
     display: grid;
     place-items: center;
-    padding-right: .6em;
-
-    &__photo {
-      width: min(540px, 80%);
-      height: min(540px, 82%);
-    }
+    padding-right: 1.75vw;
   }
 }

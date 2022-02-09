@@ -3,10 +3,10 @@
 .container {
   position: relative;
   width: min(100%, 500px);
-
+  
   @include desktop {
-    width: 1294px;
-    height: 700px;
+    width: min(1200px, 83.3%);
+    margin-left: 6.5vw;
     padding-bottom: 1.313em;
     display: flex;
     flex-direction: row-reverse;

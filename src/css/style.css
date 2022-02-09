@@ -36,8 +36,8 @@ button {
 }
 @media (min-width: 1024px) {
   .container {
-    width: 1294px;
-    height: 700px;
+    width: min(1200px, 83.3%);
+    margin-left: 6.5vw;
     padding-bottom: 1.313em;
     display: flex;
     flex-direction: row-reverse;
@@ -61,29 +61,45 @@ button {
   text-align: center;
 }
 .testimonials__body {
-  font-size: 0.563rem;
+  font-size: clamp(0.563rem, 0.563rem + (1vw - 0.112rem) * 1.2175, 0.9745rem);
   line-height: 1.32;
 }
 .testimonials__name {
-  font-size: 0.47rem;
+  font-size: clamp(0.47rem, 0.47rem + (1vw - 0.112rem) * 0.4438, 0.62rem);
   margin-bottom: 0.2em;
 }
 .testimonials__role {
-  font-size: 0.45rem;
+  font-size: clamp(0.47rem, 0.47rem + (1vw - 0.112rem) * 0.3254, 0.58rem);
 }
 @media (min-width: 1024px) {
   .testimonials {
     position: absolute;
-    padding: 0;
-    width: 48%;
-    height: 100%;
+    top: 48%;
     left: 0;
-    padding-left: 2.94em;
+    transform: translateY(-50%);
+    width: 53%;
+    background-size: 8.4vw;
+    background-position-x: 94px;
+    padding: 5.5% 0 0 0;
+    text-align: left;
+  }
+  .testimonials__body {
+    line-height: 1.4;
+  }
+  .testimonials__name {
+    margin-bottom: 0;
+    margin-right: 0.5em;
   }
 }
 
 .persona {
   margin-block: 0.6em 1.44em;
+}
+@media (min-width: 1024px) {
+  .persona {
+    display: flex;
+    margin-block: 1.2em 0;
+  }
 }
 
 .switch {
@@ -109,34 +125,52 @@ button {
   border-bottom-right-radius: 100px;
   background-size: 28%;
 }
+@media (min-width: 1024px) {
+  .switch {
+    left: 26%;
+    bottom: 8%;
+    transform: translateX(-50%);
+  }
+  .switch__btn {
+    width: 56px;
+    height: 56px;
+  }
+}
 
 .photography {
   position: relative;
-  padding: 1.69em 1.907em 1.5em 1.907em;
-  background: url("../../images/pattern-bg.svg") center no-repeat;
-  background-position-y: 22px;
-  background-size: 87%;
+  padding: 0.67em 0.79em;
 }
 .photography__photo {
-  width: min(100%, 350px);
-  object-fit: cover;
+  width: 100%;
   border-radius: 4px;
   box-shadow: 0px 30px 40px -24px rgba(38, 32, 70, 0.5);
 }
 @media (min-width: 1024px) {
   .photography {
-    padding: 0;
-    width: 54%;
-    height: 100%;
-    background-position: center center;
-    background-size: 100%;
-    display: grid;
-    place-items: center;
-    padding-right: 0.6em;
+    width: 58%;
+    height: min(700px, 87.5vh);
+    padding-inline: 0;
   }
   .photography__photo {
-    width: min(540px, 80%);
-    height: min(540px, 82%);
+    width: min(540px, 60%);
+  }
+}
+
+.photo-container {
+  width: 100%;
+  padding: 0.85em 1.05em 0.85em 1.05em;
+  background: url("../../images/pattern-bg.svg") no-repeat;
+  background-size: contain;
+}
+@media (min-width: 1024px) {
+  .photo-container {
+    background-position: center;
+    padding: 0;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding-right: 1.75vw;
   }
 }
 
