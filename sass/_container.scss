@@ -1,5 +1,9 @@
 @use "./config" as *;
 
+.container {
+  width: min(100%, 500px);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

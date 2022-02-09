@@ -1,2 +1,17 @@
 @use '../config' as *;
 @use './switch' as *;
+
+.photography {
+  position: relative;
+  padding: 1.69em 1.907em 1.5em 1.907em;
+  background: url("../../images/pattern-bg.svg") center no-repeat;
+  background-position-y: 22px;
+  background-size: 87%;
+  
+  &__photo {
+    width: min(100%, 350px);
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0px 30px 40px -24px rgba(38, 32, 70, .5);
+  }
+}

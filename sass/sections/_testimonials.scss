@@ -1,1 +1,25 @@
 @use '../_config' as *;
+
+.testimonials {
+  padding: .85em .9em .85em .9em;
+  background: url("../../images/pattern-quotes.svg") center top no-repeat;
+  background-size: 62px;
+  text-align: center;
+
+  &__body {
+    font-size: .563rem;
+    line-height: 1.32;
+  }
+  &__name {
+    font-size: .47rem;
+    margin-bottom: .2em;
+  }
+  &__role {
+    font-size: .45rem;
+  }
+}
+
+.persona {
+  margin-block: .6em 1.44em;
+}
+
