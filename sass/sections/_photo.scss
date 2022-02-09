@@ -14,4 +14,20 @@
     border-radius: 4px;
     box-shadow: 0px 30px 40px -24px rgba(38, 32, 70, .5);
   }
+
+  @include desktop {
+    padding: 0;
+    width: 54%;
+    height: 100%;
+    background-position: center center;
+    background-size: 100%;
+    display: grid;
+    place-items: center;
+    padding-right: .6em;
+
+    &__photo {
+      width: min(540px, 80%);
+      height: min(540px, 82%);
+    }
+  }
 }

@@ -31,7 +31,18 @@ button {
 }
 
 .container {
+  position: relative;
   width: min(100%, 500px);
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 1294px;
+    height: 700px;
+    padding-bottom: 1.313em;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
 
 .attribution {
@@ -59,6 +70,16 @@ button {
 }
 .testimonials__role {
   font-size: 0.45rem;
+}
+@media (min-width: 1024px) {
+  .testimonials {
+    position: absolute;
+    padding: 0;
+    width: 48%;
+    height: 100%;
+    left: 0;
+    padding-left: 2.94em;
+  }
 }
 
 .persona {
@@ -101,6 +122,22 @@ button {
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 0px 30px 40px -24px rgba(38, 32, 70, 0.5);
+}
+@media (min-width: 1024px) {
+  .photography {
+    padding: 0;
+    width: 54%;
+    height: 100%;
+    background-position: center center;
+    background-size: 100%;
+    display: grid;
+    place-items: center;
+    padding-right: 0.6em;
+  }
+  .photography__photo {
+    width: min(540px, 80%);
+    height: min(540px, 82%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

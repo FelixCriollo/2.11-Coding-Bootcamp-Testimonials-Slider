@@ -17,6 +17,15 @@
   &__role {
     font-size: .45rem;
   }
+
+  @include desktop {
+    position: absolute;
+    padding: 0;
+    width: 48%;
+    height: 100%;
+    left: 0;
+    padding-left: 2.94em;
+  }
 }
 
 .persona {

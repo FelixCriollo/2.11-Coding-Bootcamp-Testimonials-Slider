@@ -28,3 +28,9 @@ h3 {
 button {
   all: unset;
 }
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content
+  }
+}
