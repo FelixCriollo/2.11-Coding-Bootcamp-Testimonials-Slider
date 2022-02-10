@@ -139,12 +139,15 @@ button {
 
 .photography {
   position: relative;
-  padding: 0.67em 0.79em;
+  padding: 0.67em 0.79em 0 0.79em;
+  height: min(93vw, 500px);
 }
 .photography__photo {
-  width: 100%;
   border-radius: 4px;
   box-shadow: 0px 30px 40px -24px rgba(38, 32, 70, 0.5);
+  height: 80%;
+  width: 78%;
+  object-fit: cover;
 }
 @media (min-width: 1024px) {
   .photography {
@@ -153,24 +156,25 @@ button {
     padding-inline: 0;
   }
   .photography__photo {
-    width: min(540px, 60%);
+    height: 82.5%;
+    width: 82.5%;
   }
 }
 
 .photo-container {
   width: 100%;
-  padding: 0.85em 1.05em 0.85em 1.05em;
+  height: 100%;
+  padding-bottom: 0.6em;
   background: url("../../images/pattern-bg.svg") no-repeat;
   background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1024px) {
   .photo-container {
+    padding-right: 1.5vw;
     background-position: center;
-    padding: 0;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    padding-right: 1.75vw;
   }
 }
 
