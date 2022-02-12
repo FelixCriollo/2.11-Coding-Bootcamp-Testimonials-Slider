@@ -3,13 +3,14 @@
 .switch {
   position: absolute;
   left: 50%;
-  bottom: 10%;
+  bottom: 8%;
   transform: translateX(-50%);
   display: flex;
 
   &__btn {
     width: 40px;
     height: 40px;
+    cursor: pointer;
     
     &--left {
       background: url("../../images/icon-prev.svg") center no-repeat, #fff;
@@ -17,7 +18,7 @@
       border-bottom-left-radius: 100px;
       background-size: 28%;
     }
-    &--rigth {
+    &--right {
       background: url("../../images/icon-next.svg") center no-repeat, #fff;
       border-top-right-radius: 100px;
       border-bottom-right-radius: 100px;

@@ -4,13 +4,12 @@
 .photography {
   position: relative;
   padding: .67em .79em 0 .79em;
-  height: min(93vw, 500px);
+  height: min(92vw, 500px);
   
   &__photo {
-    border-radius: 4px;
-    box-shadow: 0px 30px 40px -24px rgba(38, 32, 70, .5);
-    height: 80%;
-    width: 78%;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
     object-fit: cover;
   }
 
@@ -18,10 +17,9 @@
     width: 58%;
     height: min(700px, 87.5vh);
     padding-inline: 0;
-
+    
     &__photo {
-      height: 82.5%;
-      width: 82.5%;
+      object-fit: cover;
     }
   }
 }
@@ -29,15 +27,14 @@
 .photo-container {
   width: 100%;
   height: 100%;
-  padding-bottom: .6em;
-  background: url("../../images/pattern-bg.svg") no-repeat;
-  background-size: contain;
+  background: url("../../images/pattern-bg.svg") center center no-repeat;
+  background-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   
   @include desktop {
     padding-right: 1.5vw;
-    background-position: center;
+    background-size: contain;
   }
 }

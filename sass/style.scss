@@ -1,3 +1,4 @@
 @use './container' as *;
-@use 'sections/testimonials' as *;
-@use 'sections/photo' as *;
+@use 'elements/carousel' as *;
+@use 'elements/testimonials' as *;
+@use 'elements/photo' as *;

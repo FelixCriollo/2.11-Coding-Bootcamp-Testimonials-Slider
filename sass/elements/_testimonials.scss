@@ -1,29 +1,26 @@
 @use '../_config' as *;
 
 .testimonials {
-  padding: .85em .9em .85em .9em;
+  padding: .85em .9em 1.44em .9em;
   background: url("../../images/pattern-quotes.svg") center top no-repeat;
   background-size: 62px;
   text-align: center;
 
   &__body {
-    // font-size: .563rem;
     font-size: clamp(0.563rem, calc(0.563rem + ((1vw - 0.112rem) * 1.2175)), 0.9745rem);
     line-height: 1.32;
   }
   &__name {
-    // font-size: .47rem;
     font-size: clamp(0.47rem, calc(0.47rem + ((1vw - 0.112rem) * 0.4438)), 0.62rem);
     margin-bottom: .2em;
   }
   &__role {
-    // font-size: .45rem;
     font-size: clamp(0.47rem, calc(0.47rem + ((1vw - 0.112rem) * 0.3254)), 0.58rem);
   }
 
   @include desktop {
     position: absolute;
-    top: 48%;
+    top: 50%;
     left: 0;
     transform: translateY(-50%);
     width: 53%;
@@ -43,10 +40,12 @@
 }
 
 .persona {
-  margin-block: .6em 1.44em;
+  width: 100%;
   
   @include desktop {
-    display: flex;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-block: 1.2em 0;
   }
 }
